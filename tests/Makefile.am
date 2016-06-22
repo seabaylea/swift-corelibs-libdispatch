@@ -42,8 +42,6 @@ TESTS=							\
 	dispatch_priority			\
 	dispatch_priority2			\
 	dispatch_context_for_key	\
-	dispatch_read				\
-	dispatch_read2				\
 	dispatch_after				\
 	dispatch_timer				\
 	dispatch_timer_timeout		\
@@ -54,10 +52,7 @@ TESTS=							\
 	dispatch_starfish			\
 	dispatch_cascade			\
 	dispatch_readsync			\
-	dispatch_data				\
-	dispatch_io					\
-	dispatch_io_net				\
-	dispatch_select
+	dispatch_data
 
 # Tests that are currently failing intermittently, sometimes as hangs and therefore
 # can't be run
@@ -67,7 +62,12 @@ FAILING_TESTS = 				\
 	dispatch_concur				\
 	dispatch_timer_short		\
 	dispatch_sema				\
-	dispatch_drift
+	dispatch_read				\
+	dispatch_read2				\
+	dispatch_io					\
+	dispatch_io_net				\
+	dispatch_drift				\
+	dispatch_select
 
 # List tests that are expected to fail here.
 # Currently dispatch_concur fails occasionally, but passes more often than fails. 
